@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+web-service-tests - All Test Cases,,,,2024-06-29 12:26:26,2024-06-29 12:26:32,6.204s,PASSED
+,,,,,,,
+Test Cases/1. Search List Users,,,,2024-06-29 12:26:26,2024-06-29 12:26:29,2.787s,PASSED
+"sendRequest(findTestObject(""Object Repository/GET list users""))",,,,2024-06-29 12:26:27,2024-06-29 12:26:29,2.402s,PASSED
+,,,,,,,
+Test Cases/2. Search Single Users,,,,2024-06-29 12:26:29,2024-06-29 12:26:30,0.637s,PASSED
+"sendRequest(findTestObject(""GET single user"", [""email"":""""]))",,,,2024-06-29 12:26:29,2024-06-29 12:26:30,0.300s,PASSED
+,,,,,,,
+Test Cases/3. Update,,,,2024-06-29 12:26:30,2024-06-29 12:26:31,0.933s,PASSED
+"sendRequest(findTestObject(""PUT update""))",,,,2024-06-29 12:26:30,2024-06-29 12:26:31,0.671s,PASSED
+,,,,,,,
+Test Cases/4. Register Successful,,,,2024-06-29 12:26:31,2024-06-29 12:26:32,1.445s,PASSED
+"getResponse = sendRequest(findTestObject(""GET single user""))",,,,2024-06-29 12:26:31,2024-06-29 12:26:31,0.364s,PASSED
+jsonResponse = JsonSlurper().parseText(getResponse.getResponseBodyContent()),,,,2024-06-29 12:26:31,2024-06-29 12:26:31,0.024s,PASSED
+email = email,,,,2024-06-29 12:26:31,2024-06-29 12:26:31,0.007s,PASSED
+email = email,,,,2024-06-29 12:26:31,2024-06-29 12:26:31,0.001s,PASSED
+"postRequest = findTestObject(""POST register successful"")",,,,2024-06-29 12:26:31,2024-06-29 12:26:31,0.090s,PASSED
+"postRequest.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent((({""email"": "" + internal.GlobalVariable.email) + "", ""password"": ""pistol""}), UTF-8, application/json))",,,,2024-06-29 12:26:31,2024-06-29 12:26:31,0.031s,PASSED
+postResponse = sendRequest(postRequest),,,,2024-06-29 12:26:31,2024-06-29 12:26:32,0.632s,PASSED
+"verifyResponseStatusCode(postResponse, successCode)",,,,2024-06-29 12:26:32,2024-06-29 12:26:32,0.010s,PASSED
