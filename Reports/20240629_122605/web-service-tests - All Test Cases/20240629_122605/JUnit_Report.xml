@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="web-service-tests - All Test Cases" time="6.204" tests="4" failures="0" errors="0">
+   <testsuite name="web-service-tests - All Test Cases" tests="4" failures="0" errors="0" time="6.204" skipped="0" timestamp="2024-06-29 12:26:26" hostname="hp - LAPTOP-VRHCKB1Q" id="Test Suites/web-service-tests - All Test Cases">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\hp\\Katalon Studio\\API-Testing-Katalon\\Reports\\20240629_122605\\web-service-tests - All Test Cases\\20240629_122605"/>
+         <property name="logFiles" value="C:\\Users\\hp\\Katalon Studio\\API-Testing-Katalon\\Reports\\20240629_122605\\web-service-tests - All Test Cases\\20240629_122605\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hp - LAPTOP-VRHCKB1Q"/>
+         <property name="hostAddress" value="172.20.10.3"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.6.9.208"/>
+      </properties>
+      <testcase name="Test Cases/1. Search List Users" time="2.787" classname="Test Cases/1. Search List Users" status="PASSED">
+         <system-out><![CDATA[2024-06-29 12:26:26 - [TEST_CASE][PASSED] - Test Cases/1. Search List Users: Test Cases/1. Search List Users
+
+2024-06-29 12:26:27 - [TEST_STEP][PASSED] - sendRequest(findTestObject("Object Repository/GET list users")): Send request successfully
+
+2024-06-29 12:26:29 - [MESSAGE][INFO] - HAR: C:\Users\hp\Katalon Studio\API-Testing-Katalon\Reports\20240629_122605\web-service-tests - All Test Cases\20240629_122605\requests\main\0.har
+
+2024-06-29 12:26:29 - [MESSAGE][PASSED] - Send request successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/2. Search Single Users" time="0.637" classname="Test Cases/2. Search Single Users" status="PASSED">
+         <system-out><![CDATA[2024-06-29 12:26:29 - [TEST_CASE][PASSED] - Test Cases/2. Search Single Users: Test Cases/2. Search Single Users
+
+2024-06-29 12:26:29 - [TEST_STEP][PASSED] - sendRequest(findTestObject("GET single user", ["email":""])): Send request successfully
+
+2024-06-29 12:26:30 - [MESSAGE][INFO] - HAR: C:\Users\hp\Katalon Studio\API-Testing-Katalon\Reports\20240629_122605\web-service-tests - All Test Cases\20240629_122605\requests\main\1.har
+
+2024-06-29 12:26:30 - [MESSAGE][PASSED] - Send request successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/3. Update" time="0.933" classname="Test Cases/3. Update" status="PASSED">
+         <system-out><![CDATA[2024-06-29 12:26:30 - [TEST_CASE][PASSED] - Test Cases/3. Update: Test Cases/3. Update
+
+2024-06-29 12:26:30 - [TEST_STEP][PASSED] - sendRequest(findTestObject("PUT update")): Send request successfully
+
+2024-06-29 12:26:31 - [MESSAGE][INFO] - HAR: C:\Users\hp\Katalon Studio\API-Testing-Katalon\Reports\20240629_122605\web-service-tests - All Test Cases\20240629_122605\requests\main\2.har
+
+2024-06-29 12:26:31 - [MESSAGE][PASSED] - Send request successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/4. Register Successful" time="1.445" classname="Test Cases/4. Register Successful" status="PASSED">
+         <system-out><![CDATA[2024-06-29 12:26:31 - [TEST_CASE][PASSED] - Test Cases/4. Register Successful: Test Cases/4. Register Successful
+
+2024-06-29 12:26:31 - [TEST_STEP][PASSED] - getResponse = sendRequest(findTestObject("GET single user")): Send request successfully
+
+2024-06-29 12:26:31 - [MESSAGE][INFO] - HAR: C:\Users\hp\Katalon Studio\API-Testing-Katalon\Reports\20240629_122605\web-service-tests - All Test Cases\20240629_122605\requests\main\3.har
+
+2024-06-29 12:26:31 - [MESSAGE][PASSED] - Send request successfully
+
+2024-06-29 12:26:31 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(getResponse.getResponseBodyContent()): null
+
+2024-06-29 12:26:31 - [TEST_STEP][PASSED] - email = email: null
+
+2024-06-29 12:26:31 - [TEST_STEP][PASSED] - email = email: null
+
+2024-06-29 12:26:31 - [TEST_STEP][PASSED] - postRequest = findTestObject("POST register successful"): null
+
+2024-06-29 12:26:31 - [TEST_STEP][PASSED] - postRequest.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent((({"email": " + internal.GlobalVariable.email) + ", "password": "pistol"}), UTF-8, application/json)): null
+
+2024-06-29 12:26:31 - [TEST_STEP][PASSED] - postResponse = sendRequest(postRequest): Send request successfully
+
+2024-06-29 12:26:32 - [MESSAGE][INFO] - HAR: C:\Users\hp\Katalon Studio\API-Testing-Katalon\Reports\20240629_122605\web-service-tests - All Test Cases\20240629_122605\requests\main\4.har
+
+2024-06-29 12:26:32 - [MESSAGE][PASSED] - Send request successfully
+
+2024-06-29 12:26:32 - [TEST_STEP][PASSED] - verifyResponseStatusCode(postResponse, successCode): Verify response status code successfully
+
+2024-06-29 12:26:32 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2024-06-29 12:26:26 - [TEST_SUITE][PASSED] - web-service-tests - All Test Cases: Test Cases/4. Register Successful]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

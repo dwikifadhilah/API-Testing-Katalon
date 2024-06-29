@@ -29,7 +29,7 @@
       <guid>78df488f-64b5-408c-b771-64ad224d4298</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/3. Update</testCaseId>
+      <testCaseId>Test Cases/3. Update Users Data</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

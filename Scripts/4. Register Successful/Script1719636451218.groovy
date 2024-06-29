@@ -39,7 +39,7 @@ GlobalVariable.email = email
 def postRequest = findTestObject('POST register successful')
 
 // Replace the placeholder with the actual email
-postRequest.setBodyContent(new HttpTextBodyContent('{"email": "' + GlobalVariable.email + '", "password": "pistol"}', "UTF-8", "application/json"))
+postRequest.setBodyContent(new HttpTextBodyContent('{"email": "' + GlobalVariable.email + '", "password": "' + GlobalVariable.password + '"}', "UTF-8", "application/json"))
 
 // Send POST request to register user
 def postResponse = WS.sendRequest(postRequest)

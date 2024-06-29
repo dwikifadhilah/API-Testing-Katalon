@@ -16,8 +16,13 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>0</initValue>
-      <name>globalId</name>
+      <initValue>'Dwiki F'</initValue>
+      <name>name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'QA'</initValue>
+      <name>job</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -26,7 +31,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'pistol'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

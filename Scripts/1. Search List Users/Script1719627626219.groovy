@@ -20,13 +20,6 @@ import groovy.json.JsonOutput
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//WS.sendRequest(findTestObject('GET list users'))
-//
-//int responseCode = WS.getResponseStatusCode(findTestObject('GET list users'))
-//
-//WS.verifyResponseStatusCode(responseCode, 200)
-//def response = WS.sendRequestAndVerify(findTestObject('Object Repository/GET list users'))
+response = WS.sendRequest(findTestObject('Object Repository/GET list users'))
 
-WS.sendRequest(findTestObject('Object Repository/GET list users'))
-
-
+WS.verifyResponseStatusCode(response, GlobalVariable.successCode)

@@ -17,5 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequest(findTestObject('GET single user', [('email') : '']))
+response = WS.sendRequest(findTestObject('GET single user', [('email') : '']))
 
+WS.verifyResponseStatusCode(response, GlobalVariable.successCode)
